@@ -26,6 +26,11 @@ class App extends Component {
   }
   render() {
     return (
+      <div>
+      <div className="col-md-12 flex-container">
+        <h1>To Do List</h1>
+      </div>
+
       <div className="col-md-2 border border-rounded border-dark" >
         <form onSubmit={this.onSubmit}>
           <input
@@ -36,7 +41,8 @@ class App extends Component {
             <button className="btn btn-primary btn-sm">Submit</button>
         </form>
         <List submittedUserInput={this.state.submittedUserInput}
-              className="flex-container" />
+        className="flex-container" />
+      </div>
       </div>
     );
   }
